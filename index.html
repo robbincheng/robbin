@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,12 +70,19 @@
             background-color: #4682B4; /* 深藍色 */
         }
 
-        /* 卡通風格圖片 */
+        /* 恢復圖片大小並加上邊框與發光效果 */
         .cartoon-image {
-            width: 150px;  /* 設置圖片寬度 */
-            height: 150px; /* 設置圖片高度 */
+            width: 150px;  /* 恢復原來的圖片尺寸 */
+            height: 150px;
             margin: 20px;
             border-radius: 10px;
+            border: 4px solid #1E90FF; /* 圖片外框顏色 */
+            box-shadow: 0 0 20px rgba(30, 144, 255, 0.8); /* 發光效果 */
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .cartoon-image:hover {
+            box-shadow: 0 0 30px rgba(30, 144, 255, 1); /* 當懸停時，發光效果加強 */
         }
     </style>
 </head>
@@ -93,7 +100,7 @@
 
         <h2>關於我</h2>
         <p>我的名字是 <strong>羅賓</strong>，英文名字是 <strong>Robbin</strong>。</p>
-        <p>我喜歡在假日騎單車旅遊，欣賞風景，探索秘境，並嘗試新美食。</p>
+        <p>我喜歡在假日騎單車旅遊，欣賞風景，探索秘境，並嘗試新美食，目前開了二個臉書粉絲，一個是悠騎生活Gogobike，另		外一個是WOW室內設計。</p>
 
         <div class="container">
             <p>請點擊下面的連結查看我們的WOW室內設計作品集。</p>
