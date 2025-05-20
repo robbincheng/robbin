@@ -9,7 +9,7 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #FFFAF0; /* 明亮的背景色 */
+            background-color: #FFFAF0;
             text-align: center;
         }
 
@@ -31,14 +31,7 @@
 
         .dropdown {
             position: relative;
-            display: flex;
-            align-items: center;
-        }
-
-        .dropdown-text {
-            margin-right: 5px;
-            font-size: 1.2rem;
-            color: #333333;
+            display: inline-block;
         }
 
         .dropdown-btn {
@@ -54,7 +47,7 @@
             display: none;
             position: absolute;
             background-color: #f9f9f9;
-            min-width: 160px;
+            min-width: 200px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
             right: 0;
@@ -81,7 +74,7 @@
         section {
             padding: 15px;
             margin: 15px;
-            background: #FFFFE0; /* 將白色改為淺黃色 */
+            background: #FFFFE0;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
@@ -149,9 +142,11 @@
     <header>
         <h1>歡迎來到羅賓的個人網頁</h1>
         <div class="dropdown">
-            <span class="dropdown-text">選單</span> <button class="dropdown-btn">&#9776;</button> <div class="dropdown-content">
-                <a href="https://www.facebook.com/gogobike168" target="_blank">悠騎生活Gogobike</a>
-                <a href="https://www.facebook.com/wowdesign168" target="_blank">WOW室內設計</a>
+            <span class="dropdown-text">選單</span>
+            <button class="dropdown-btn">&#9776;</button>
+            <div class="dropdown-content">
+                <a href="https://www.facebook.com/happygogobike" target="_blank">悠騎生活Gogobike</a>
+                <a href="https://www.facebook.com/wow.interiordesign168" target="_blank">WOW室內設計</a>
             </div>
         </div>
     </header>
