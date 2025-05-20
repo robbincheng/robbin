@@ -6,31 +6,32 @@
     <title>羅賓的個人網頁</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #FFFAF0; /* 明亮的背景色 */
             text-align: center;
         }
 
         header {
-            background: #f4f4f4;
-            color: #ffffff;
-            padding: 10px 0;
+            background: #ADD8E6; /* 淺藍色背景 */
+            color: #333333; /* 黑色文字 */
+            padding: 20px 0;
+            font-size: 1.5rem;
         }
 
         section {
             padding: 20px;
             margin: 20px;
             background: #ffffff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
 
         footer {
             text-align: center;
             padding: 10px 0;
-            background: #35424a;
+            background: #ADD8E6; /* 淺藍色背景 */
             color: #ffffff;
             position: relative;
             bottom: 0;
@@ -38,7 +39,7 @@
         }
 
         a {
-            color: #35424a;
+            color: #1E90FF; /* 鮮豔藍色 */
             text-decoration: none;
         }
 
@@ -51,22 +52,30 @@
         }
 
         h1 {
-            color: #333;
+            color: #333333;
         }
 
         .link-button {
             display: inline-block;
             padding: 10px 20px;
             font-size: 1.2rem;
-            background-color: #007BFF;
+            background-color: #1E90FF; /* 鮮豔藍色 */
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 10px;
             margin-top: 20px;
         }
 
         .link-button:hover {
-            background-color: #0056b3;
+            background-color: #4682B4; /* 深藍色 */
+        }
+
+        /* 卡通風格圖片 */
+        .cartoon-image {
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -77,16 +86,20 @@
     </header>
 
     <section>
+        <!-- 卡通圖片 -->
+        <img src="https://example.com/bike-cartoon.png" alt="騎車卡通" class="cartoon-image">
+        <img src="https://example.com/flower-cartoon.png" alt="花朵卡通" class="cartoon-image">
+        <img src="https://example.com/sun-cartoon.png" alt="太陽卡通" class="cartoon-image">
+
         <h2>關於我</h2>
         <p>我的名字是 <strong>羅賓</strong>，英文名字是 <strong>Robbin</strong>。</p>
         <p>我喜歡在假日騎單車旅遊，欣賞風景，探索秘境，並嘗試新美食。</p>
 
-      <div class="container">
-        <p>請點擊下面的連結查看我們的WOW室內設計作品集。</p>
-        <!-- 超鏈接指向 project1.html -->
-        <a href="project1.html" class="link-button">查看 ✨靜奢極簡風｜不宣言的高級，藏在每一處細節</a>
-	<a href="project2.html" class="link-button">查看 💡空間不是展示設計，而是乘載「生活」的容器</a>
-    </div>
+        <div class="container">
+            <p>請點擊下面的連結查看我們的WOW室內設計作品集。</p>
+            <a href="project1.html" class="link-button">查看 ✨靜奢極簡風｜不宣言的高級，藏在每一處細節</a>
+            <a href="project2.html" class="link-button">查看 💡空間不是展示設計，而是乘載「生活」的容器</a>
+        </div>
 
         <h2>聯絡我</h2>
         <p>電子郵件: <a href="mailto:robbincheng@hotmail.com">robbincheng@hotmail.com</a></p>
