@@ -32,7 +32,14 @@
         /* 下拉選單樣式 */
         .dropdown {
             position: relative;
-            display: inline-block;
+            display: flex; /* 使用 flexbox 讓文字和按鈕水平排列 */
+            align-items: center; /* 垂直置中 */
+        }
+
+        .dropdown-text {
+            margin-right: 5px; /* 調整文字和按鈕之間的間距 */
+            font-size: 1.2rem;
+            color: #333333;
         }
 
         .dropdown-btn {
@@ -53,6 +60,7 @@
             z-index: 1;
             right: 0; /* 讓選單靠右對齊 */
             border-radius: 5px;
+            top: 100%; /* 讓下拉選單在按鈕下方 */
         }
 
         .dropdown-content a {
@@ -144,7 +152,7 @@
     <header>
         <h1>歡迎來到羅賓的個人網頁</h1>
         <div class="dropdown">
-            <button class="dropdown-btn">&#9776;</button> <div class="dropdown-content">
+            <span class="dropdown-text">選單</span> <button class="dropdown-btn">&#9776;</button> <div class="dropdown-content">
                 <a href="https://www.facebook.com/gogobike168" target="_blank">悠騎生活Gogobike</a>
                 <a href="https://www.facebook.com/wowdesign168" target="_blank">WOW室內設計</a>
             </div>
