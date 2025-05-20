@@ -16,13 +16,64 @@
         header {
             background: #ADD8E6; /* 淺藍色背景 */
             color: #333333; /* 黑色文字 */
-            padding: 20px 0;
+            padding: 15px 0;
             font-size: 1.5rem;
+            display: flex; /* 使用 flexbox 讓內容水平排列 */
+            justify-content: space-between; /* 標題和選單分開兩側 */
+            align-items: center; /* 垂直置中 */
+            padding-right: 20px; /* 右側留一些邊距 */
+            padding-left: 20px; /* 左側留一些邊距 */
+        }
+
+        header h1 {
+            margin: 0; /* 移除 h1 預設的 margin */
+        }
+
+        /* 下拉選單樣式 */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-btn {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 24px; /* 三條線的字體大小 */
+            color: #333333;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            right: 0; /* 讓選單靠右對齊 */
+            border-radius: 5px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left; /* 選項文字靠左對齊 */
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
 
         section {
-            padding: 20px;
-            margin: 20px;
+            padding: 15px;
+            margin: 15px;
             background: #ffffff;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -64,6 +115,8 @@
             text-decoration: none;
             border-radius: 10px;
             margin-top: 20px;
+            margin-left: 10px; /* 增加按鈕之間的間距 */
+            margin-right: 10px;
         }
 
         .link-button:hover {
@@ -90,17 +143,22 @@
 <body>
     <header>
         <h1>歡迎來到羅賓的個人網頁</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn">&#9776;</button> <div class="dropdown-content">
+                <a href="https://www.facebook.com/gogobike168" target="_blank">悠騎生活Gogobike</a>
+                <a href="https://www.facebook.com/wowdesign168" target="_blank">WOW室內設計</a>
+            </div>
+        </div>
     </header>
 
     <section>
-        <!-- 卡通圖片 -->
         <img src="image/bikehead.jpg" alt="騎車卡通" class="cartoon-image">
         <img src="image/index1.jpg" alt="花朵卡通" class="cartoon-image">
         <img src="image/index2.jpg" alt="太陽卡通" class="cartoon-image">
 
         <h2>關於我</h2>
         <p>我的名字是 <strong>羅賓</strong>，英文名字是 <strong>Robbin</strong>。</p>
-        <p>我喜歡在假日騎單車旅遊，欣賞風景，探索秘境，並嘗試新美食，目前開了二個臉書粉絲，一個是悠騎生活Gogobike，另		外一個是WOW室內設計。</p>
+        <p>我喜歡在假日騎單車旅遊，欣賞風景，探索秘境，並嘗試新美食，目前開了二個臉書粉絲，一個是悠騎生活Gogobike，另外一個是WOW室內設計。</p>
 
         <div class="container">
             <p>請點擊下面的連結查看我們的WOW室內設計作品集。</p>
