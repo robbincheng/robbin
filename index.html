@@ -14,30 +14,29 @@
         }
 
         header {
-            background: #ADD8E6; /* 淺藍色背景 */
-            color: #333333; /* 黑色文字 */
+            background: #ADD8E6;
+            color: #333333;
             padding: 15px 0;
             font-size: 1.5rem;
-            display: flex; /* 使用 flexbox 讓內容水平排列 */
-            justify-content: space-between; /* 標題和選單分開兩側 */
-            align-items: center; /* 垂直置中 */
-            padding-right: 20px; /* 右側留一些邊距 */
-            padding-left: 20px; /* 左側留一些邊距 */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 20px;
+            padding-left: 20px;
         }
 
         header h1 {
-            margin: 0; /* 移除 h1 預設的 margin */
+            margin: 0;
         }
 
-        /* 下拉選單樣式 */
         .dropdown {
             position: relative;
-            display: flex; /* 使用 flexbox 讓文字和按鈕水平排列 */
-            align-items: center; /* 垂直置中 */
+            display: flex;
+            align-items: center;
         }
 
         .dropdown-text {
-            margin-right: 5px; /* 調整文字和按鈕之間的間距 */
+            margin-right: 5px;
             font-size: 1.2rem;
             color: #333333;
         }
@@ -47,7 +46,7 @@
             border: none;
             cursor: pointer;
             padding: 10px;
-            font-size: 24px; /* 三條線的字體大小 */
+            font-size: 24px;
             color: #333333;
         }
 
@@ -58,9 +57,9 @@
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
-            right: 0; /* 讓選單靠右對齊 */
+            right: 0;
             border-radius: 5px;
-            top: 100%; /* 讓下拉選單在按鈕下方 */
+            top: 100%;
         }
 
         .dropdown-content a {
@@ -68,7 +67,7 @@
             padding: 12px 16px;
             text-decoration: none;
             display: block;
-            text-align: left; /* 選項文字靠左對齊 */
+            text-align: left;
         }
 
         .dropdown-content a:hover {
@@ -82,7 +81,7 @@
         section {
             padding: 15px;
             margin: 15px;
-            background: #ffffff;
+            background: #FFFFE0; /* 將白色改為淺黃色 */
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
@@ -90,7 +89,7 @@
         footer {
             text-align: center;
             padding: 10px 0;
-            background: #ADD8E6; /* 淺藍色背景 */
+            background: #ADD8E6;
             color: #ffffff;
             position: relative;
             bottom: 0;
@@ -98,7 +97,7 @@
         }
 
         a {
-            color: #1E90FF; /* 鮮豔藍色 */
+            color: #1E90FF;
             text-decoration: none;
         }
 
@@ -118,36 +117,34 @@
             display: inline-block;
             padding: 10px 20px;
             font-size: 1.2rem;
-            background-color: #1E90FF; /* 鮮豔藍色 */
+            background-color: #1E90FF;
             color: white;
             text-decoration: none;
             border-radius: 10px;
             margin-top: 20px;
-            margin-left: 10px; /* 增加按鈕之間的間距 */
+            margin-left: 10px;
             margin-right: 10px;
         }
 
         .link-button:hover {
-            background-color: #4682B4; /* 深藍色 */
+            background-color: #4682B4;
         }
 
-        /* 恢復圖片大小並加上邊框與發光效果 */
         .cartoon-image {
-            width: 150px;  /* 恢復原來的圖片尺寸 */
+            width: 150px;
             height: 150px;
             margin: 20px;
             border-radius: 10px;
-            border: 4px solid #1E90FF; /* 圖片外框顏色 */
-            box-shadow: 0 0 20px rgba(30, 144, 255, 0.8); /* 發光效果 */
+            border: 4px solid #1E90FF;
+            box-shadow: 0 0 20px rgba(30, 144, 255, 0.8);
             transition: box-shadow 0.3s ease-in-out;
         }
 
         .cartoon-image:hover {
-            box-shadow: 0 0 30px rgba(30, 144, 255, 1); /* 當懸停時，發光效果加強 */
+            box-shadow: 0 0 30px rgba(30, 144, 255, 1);
         }
     </style>
 </head>
-
 <body>
     <header>
         <h1>歡迎來到羅賓的個人網頁</h1>
@@ -158,27 +155,22 @@
             </div>
         </div>
     </header>
-
     <section>
         <img src="image/bikehead.jpg" alt="騎車卡通" class="cartoon-image">
         <img src="image/index1.jpg" alt="花朵卡通" class="cartoon-image">
         <img src="image/index2.jpg" alt="太陽卡通" class="cartoon-image">
-
         <h2>關於我</h2>
         <p>我的名字是 <strong>羅賓</strong>，英文名字是 <strong>Robbin</strong>。</p>
         <p>我喜歡在假日騎單車旅遊，欣賞風景，探索秘境，並嘗試新美食，目前開了二個臉書粉絲，一個是悠騎生活Gogobike，另外一個是WOW室內設計。</p>
-
         <div class="container">
             <p>請點擊下面的連結查看我們的WOW室內設計作品集。</p>
             <a href="project1.html" class="link-button">查看 ✨靜奢極簡風｜不宣言的高級，藏在每一處細節</a>
             <a href="project2.html" class="link-button">查看 💡空間不是展示設計，而是乘載「生活」的容器</a>
         </div>
-
         <h2>聯絡我</h2>
         <p>電子郵件: <a href="mailto:robbincheng@hotmail.com">robbincheng@hotmail.com</a></p>
         <p>社交媒體: <a href="https://linktr.ee/gogobike168" target="_blank">linktr.ee/gogobike168</a></p>
     </section>
-
     <footer>
         <p>&copy; 2025 羅賓的個人網頁</p>
     </footer>
